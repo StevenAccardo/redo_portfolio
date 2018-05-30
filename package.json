@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "10.2.1",
+    "npm": "6.1.0"
+  },
   "scripts": {
     "dev": "webpack --mode=development",
     "serve": "webpack-dev-server --mode=development --open",
@@ -12,7 +16,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "normalize.css": "^8.0.0",
+    "normalize.css": "8.0.0",
     "npm": "6.1.0",
     "react": "16.4.0",
     "react-dom": "16.4.0"

@@ -11,7 +11,7 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, '/dist'),
-    filename: '[name].[chunkhash].js'
+    filename: 'src/js/[name].[chunkhash].js'
   },
   module: {
     rules: [
@@ -31,7 +31,25 @@ module.exports = {
         use: {
           loader: 'file-loader',
           options: {
-            name: '[name].[hash].[ext]'
+            name: 'assets/fonts/[name].[hash].[ext]'
+          }
+        }
+      },
+      {
+        test: /\.pdf$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: 'assets/docs/[name].[hash].[ext]'
+          }
+        }
+      },
+      {
+        test: /\.(mp3|wav|wma|ogg)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: 'assets/audio/[name].[hash].[ext]'
           }
         }
       },
@@ -42,7 +60,7 @@ module.exports = {
             loader: 'url-loader',
             options: {
               limit: 40000,
-              name: '[name].[hash].[ext]'
+              name: 'assets/images/[name].[hash].[ext]'
             }
           },
           'image-webpack-loader'
@@ -53,7 +71,7 @@ module.exports = {
         use: {
           loader: 'file-loader',
           options: {
-            name: '[name].[hash].[ext]'
+            name: 'assets/videos/[name].[hash].[ext]'
           }
         }
       }

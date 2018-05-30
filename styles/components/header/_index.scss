@@ -6,22 +6,43 @@
   line-height: 10vh;
   position: relative;
 
+  &:hover &__icon {
+    animation: roll 1s linear;
+  }
+
   &__welcome {
     font-size: 5rem;
     font-weight: 300;
     display: inline-block;
     margin: 0;
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 
   &__icon {
     width: 4rem;
     height: 4rem;
     position: absolute;
-    top: 2.2rem;
+    top: 1.4rem;
     right: 3rem;
 
-    &:hover {
-      animation: roll 1s linear;
+    @include respond(tab-land) {
+      top: 1.4rem;
+      right: 3rem;
+    }
+
+    @include respond(tab-port) {
+      top: 2.8rem;
+      right: 3rem;
+    }
+
+    @include respond(phone) {
+      width: 6rem;
+      height: 6rem;
+      margin-top: 1rem;
+      position: static;
     }
   }
 }

@@ -4,14 +4,14 @@ const Skills = () => {
   return (
     <section className="skills">
       <div className="skills__box">
-        <h2 className="skills__blurb">I've created a strong base, so that I can adapt to your companies needs, quickly fill any roles, and get up and running with minimal oversite.</h2>
+        <h2 className="skills__blurb u-head-primary">I've created a strong base, so that I can adapt to your company's needs, quickly fill any roles, and get up and running with minimal oversite.</h2>
         <h4 className="skills__heading">What you will get when hiring me:</h4>
         <div className="skills__listContainer">
           <ul className="skills__list">
             <li className="skills__header">Front-End Development</li>
             <ul className="skills__subHeader">
               <li className="skills__item">
-                <span className="skills__arrow">&rarr; </span>Setup Webpack 2,3,4 and NPM Scripts bundle and build my projects
+                <span className="skills__arrow">&rarr; </span>Setup my own bundling and builds using Setup Webpack 2,3,4 And NPM Scripts
               </li>
               <ul>
                 <li className="skills__subItem">
@@ -27,11 +27,11 @@ const Skills = () => {
                 </li>
               </ul>
               <li className="skills__item">
-                <span className="skills__arrow">&rarr; </span>A full grasp of React, Redux, and the React Ecosystem
+                <span className="skills__arrow">&rarr; </span>A good grasp of JavaScript, React, Redux, and the React Ecosystem
               </li>
               <ul>
                 <li className="skills__subItem">
-                  <span className="skills__arrow">&rarr; </span>Redux stores, reducers, actions and action creators, HTTP Requests, core react methodologies
+                  <span className="skills__arrow">&rarr; </span>Redux stores, reducers, actions and action creators, middleware, HTTP Requests, core react methodologies
                 </li>
               </ul>
             </ul>
@@ -42,7 +42,7 @@ const Skills = () => {
               </li>
               <ul>
                 <li className="skills__subItem">
-                  <span className="skills__arrow">&rarr; </span>Create servers and APIs from scratch, handle routing, and local and 3rd-party API authentication
+                  <span className="skills__arrow">&rarr; </span>Create servers and APIs from scratch, handle routing, implement various authentication flows, and create/work with middleware
                 </li>
               </ul>
               <li className="skills__item">

@@ -1,8 +1,19 @@
 .skills {
-  background-image: linear-gradient(to right bottom, rgba($lightBlue, 0.5), rgba($mediumBlue, 0.5));
+  background-image: linear-gradient(rgba($lightBlue, 0.5), rgba($mediumBlue, 0.5));
   clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0% 80%, 0% 20%);
   padding-top: 25rem;
   padding-bottom: 15rem;
+
+  @include respond(tab-port) {
+    clip-path: polygon(50% 0%, 100% 15%, 100% 85%, 50% 100%, 0% 85%, 0% 15%);
+    padding-top: 15rem;
+  }
+
+  @include respond(phone) {
+    clip-path: polygon(50% 0%, 100% 5%, 100% 95%, 50% 100%, 0% 95%, 0% 5%);
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+  }
 
   &:hover &__arrow {
     animation: arrow 1s linear;
@@ -12,15 +23,22 @@
     width: 80%;
     text-align: center;
     margin: 0 auto;
+
+    @include respond(phone) {
+      width: 100%;
+      padding: 0.5rem;
+    }
   }
 
   &__blurb {
-    font-size: 4rem;
-    font-weight: 300;
     color: $white;
     margin: 2rem 0;
-    text-transform: uppercase;
+
+    @include respond(phone) {
+      font-size: 3rem;
+    }
   }
+
   &__heading {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -31,6 +49,18 @@
     margin: 0 auto;
     text-align: left;
     width: 40%;
+
+    @include respond(tab-port) {
+      width: 70%;
+    }
+
+    @include respond(tab-land) {
+      width: 60%;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+    }
   }
 
   &__list {

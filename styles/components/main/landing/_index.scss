@@ -2,8 +2,12 @@
 @import 'landingDetails.scss';
 
 .landing {
-  background-image: linear-gradient(to right bottom, rgba($lightBlue, 0.5), rgba($mediumBlue, 0.5));
+  background-image: linear-gradient(rgba($lightBlue, 0.5), rgba($mediumBlue, 0.5));
   position: relative;
   height: 85vh;
   clip-path: polygon(50% 100%, 100% 80%, 100% 0, 0 0, 0 80%);
+
+  @include respond(phone) {
+    clip-path: polygon(50% 100%, 100% 95%, 100% 0, 0 0, 0 95%);
+  }
 }

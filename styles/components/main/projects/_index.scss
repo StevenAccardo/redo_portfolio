@@ -1,15 +1,36 @@
 .projects {
-  background-image: linear-gradient(to right bottom, rgba($lightBlue, 0.5), rgba($mediumBlue, 0.5));
+  background-image: linear-gradient(rgba($lightBlue, 0.5), rgba($mediumBlue, 0.5));
   clip-path: polygon(50% 0%, 100% 10%, 100% 90%, 50% 100%, 0% 90%, 0% 10%);
   //clip-path: polygon(50% 0%, 100% 15%, 100% 100%, 0 100%, 0% 15%);
   padding-top: 15rem;
   padding-bottom: 30rem;
   text-align: center;
 
+  @include respond(tab-port) {
+    clip-path: polygon(50% 0%, 100% 3%, 100% 97%, 50% 100%, 0% 97%, 0% 3%);
+    padding-bottom: 15rem;
+  }
+
+  @include respond(phone) {
+    clip-path: polygon(50% 0%, 100% 1%, 100% 99%, 50% 100%, 0% 99%, 0% 1%);
+    padding-bottom: 15rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   &__header {
     color: $white;
-    font-size: 5rem;
-    font-weight: 300;
+    margin-bottom: 0.5rem;
+  }
+
+  &__gitImg {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 2rem;
+
+    &:hover {
+      animation: spin 1.5s linear;
+    }
   }
 
   &__link,
@@ -33,11 +54,23 @@
       transform: scale(1.05) translateY(-5px);
       box-shadow: 0 1.5rem 3rem rgba($black, 0.5);
     }
+
+    @include respond(tab-port) {
+      margin-bottom: 3rem;
+    }
   }
 
   &__img {
     background-size: cover;
     height: 15rem;
+
+    @include respond(tab-port) {
+      height: 25rem;
+    }
+
+    @include respond(phone) {
+      height: 15rem;
+    }
 
     &--natours {
       background-image: url('../assets/images/natourSS.png');
@@ -66,6 +99,7 @@
 
   &__text {
     padding: 1rem 2rem;
+    text-transform: capitalize;
   }
 
   &__title {
@@ -74,18 +108,30 @@
 
   &__techStack {
     font-size: 1.2rem;
+
+    @include respond(phone) {
+      font-size: 1.5rem;
+    }
   }
 
   &__codeFeatures,
   &__appFeatures {
     font-size: 1.3rem;
     margin-top: 0.5rem;
+
+    @include respond(phone) {
+      font-size: 1.6rem;
+    }
   }
 
   &__featuresList {
     margin-left: 1rem;
     list-style-type: disc;
     font-size: 1.2rem;
+
+    @include respond(phone) {
+      font-size: 1.5rem;
+    }
 
     li {
       margin-top: 0.3rem;

@@ -1,21 +1,33 @@
 .questions {
-  background-image: linear-gradient(to right bottom, rgba($lightBlue, 0.5), rgba($mediumBlue, 0.5));
+  background-image: linear-gradient(rgba($lightBlue, 0.5), rgba($mediumBlue, 0.5));
   clip-path: polygon(50% 0%, 100% 15%, 100% 100%, 0 100%, 0% 15%);
   padding-top: 15rem;
-  padding-bottom: 30rem;
+  padding-bottom: 15rem;
   text-align: center;
+
+  @include respond(phone) {
+    clip-path: polygon(50% 0%, 100% 5%, 100% 100%, 0 100%, 0% 5%);
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+  }
 
   &__container {
     width: 80%;
     margin: 0 auto;
+
+    @include respond(phone) {
+      width: 100%;
+      padding: 0.5rem;
+    }
   }
 
   &__header {
     margin-bottom: 3rem;
-    font-size: 3rem;
     color: white;
-    font-weight: 300;
-    text-transform: uppercase;
+
+    @include respond(phone) {
+      font-size: 3rem;
+    }
   }
 
   &__list {

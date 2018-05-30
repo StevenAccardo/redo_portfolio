@@ -1,9 +1,13 @@
 import React from 'react';
+import gitImg from '../../../../assets/images/github.png';
 
 const Projects = () => {
   return (
     <section className="projects">
-      <h1 className="projects__header">Projects</h1>
+      <h1 className="projects__header u-head-primary">Projects</h1>
+      <a target="_blank" href="https://www.github.com/stevenaccardo" className="projects__gitLink">
+        <img src={gitImg} alt="GitHub Link" className="projects__gitImg" />
+      </a>
       <div className="row">
         <div className="col-1-of-3">
           <a className="projects__link" target="_blank" href="http://www.hard-to-find-quill.surge.sh/">
@@ -22,7 +26,7 @@ const Projects = () => {
                 </ul>
                 <h5 className="projects__appFeatures">Website Features:</h5>
                 <ul className="projects__featuresList">
-                  <li>Stylish Stuff</li>
+                  <li>Stylish Features</li>
                 </ul>
               </div>
             </div>
@@ -161,7 +165,7 @@ const Projects = () => {
                 <h5 className="projects__codeFeatures">Code Features:</h5>
                 <ul className="projects__featuresList">
                   <li>Persist Redux Form Data in Store</li>
-                  <li>Wizard Form</li>
+                  <li>Wizard Form Implementation</li>
                   <li>Form Validation and RegEx</li>
                   <li>Controlled Components</li>
                 </ul>
