@@ -27,6 +27,15 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
       },
       {
+        test: /\.(woff(2)?|ttf|eot|svg)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[hash].[ext]'
+          }
+        }
+      },
+      {
         test: /\.(jpe?g|png|gif|svg)$/,
         use: [
           {
@@ -40,7 +49,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.mp4$/,
+        test: /\.(mp4|webm)$/,
         use: {
           loader: 'file-loader',
           options: {

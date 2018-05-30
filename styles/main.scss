@@ -1,3 +1,14 @@
-body {
-  background-color: green;
-}
+@import url('https://fonts.googleapis.com/css?family=Changa:200,300,400,500,600,700,800');
+
+@import 'abstracts/animations';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+@import 'abstracts/utilities';
+
+@import 'base/base';
+
+@import 'components/footer/index';
+@import 'components/header/index';
+@import 'components/main/index';
+
+@import 'vendor/index';

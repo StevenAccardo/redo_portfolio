@@ -1,0 +1,11 @@
+.footer {
+  background-color: $darkBlue;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  padding: 3rem 0;
+
+  &__email {
+    margin-bottom: 2rem;
+  }
+}

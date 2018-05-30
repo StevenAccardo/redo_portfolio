@@ -1,7 +1,16 @@
 import React from 'react';
+import Header from './header';
+import Main from './main';
+import Footer from './footer';
 
 const App = () => {
-  return <div>Hello Steve!!</div>;
+  return (
+    <div className="app">
+      <Header />
+      <Main />
+      <Footer />
+    </div>
+  );
 };
 
 export default App;

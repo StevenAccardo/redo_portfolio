@@ -1,0 +1,94 @@
+.projects {
+  background-image: linear-gradient(to right bottom, rgba($lightBlue, 0.5), rgba($mediumBlue, 0.5));
+  clip-path: polygon(50% 0%, 100% 10%, 100% 90%, 50% 100%, 0% 90%, 0% 10%);
+  //clip-path: polygon(50% 0%, 100% 15%, 100% 100%, 0 100%, 0% 15%);
+  padding-top: 15rem;
+  padding-bottom: 30rem;
+  text-align: center;
+
+  &__header {
+    color: $white;
+    font-size: 5rem;
+    font-weight: 300;
+  }
+
+  &__link,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $veryDarkBlue;
+  }
+
+  &__box {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba($black, 0.5);
+    background-color: $lightGrey;
+    height: 60rem;
+    transition: all 0.5s;
+    backface-visibility: hidden;
+    text-align: left;
+
+    &:hover {
+      transform: scale(1.05) translateY(-5px);
+      box-shadow: 0 1.5rem 3rem rgba($black, 0.5);
+    }
+  }
+
+  &__img {
+    background-size: cover;
+    height: 15rem;
+
+    &--natours {
+      background-image: url('../assets/images/natourSS.png');
+    }
+
+    &--bloggerClient {
+      background-image: url('../assets/images/bloggerSS.png');
+    }
+
+    &--bloggerAPI {
+      background-image: url('../assets/images/bloggerSS.png');
+    }
+
+    &--performance {
+      background-image: url('../assets/images/performanceSS.png');
+    }
+
+    &--emaily {
+      background-image: url('../assets/images/emailySS.png');
+    }
+
+    &--macro {
+      background-image: url('../assets/images/macroSS.png');
+    }
+  }
+
+  &__text {
+    padding: 1rem 2rem;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__techStack {
+    font-size: 1.2rem;
+  }
+
+  &__codeFeatures,
+  &__appFeatures {
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+  }
+
+  &__featuresList {
+    margin-left: 1rem;
+    list-style-type: disc;
+    font-size: 1.2rem;
+
+    li {
+      margin-top: 0.3rem;
+    }
+  }
+}

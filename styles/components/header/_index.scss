@@ -1,0 +1,27 @@
+.header {
+  height: 10vh;
+  background-color: $darkBlue;
+  text-align: center;
+  color: white;
+  line-height: 10vh;
+  position: relative;
+
+  &__welcome {
+    font-size: 5rem;
+    font-weight: 300;
+    display: inline-block;
+    margin: 0;
+  }
+
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 2.2rem;
+    right: 3rem;
+
+    &:hover {
+      animation: roll 1s linear;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+/* basic reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  //This defines what 1rem is. Standard browser font-size is usually 16px. So if we want 1 rem to equal 10px, we will have to figure out the percentage in order to achieve that.
+  font-size: 62.5%; //1rem = 10px/16px = 62.5%
+}
+
+body {
+  font-family: 'Changa', sans-serif;
+  line-height: 1.2;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.app {
+  font-weight: 300; //400 500 700 900
+  color: $veryDarkBlue;
+}
+
+::selection {
+  background-color: $darkBlue;
+  color: $white;
+}
