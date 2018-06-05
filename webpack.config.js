@@ -4,6 +4,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -12,6 +13,9 @@ module.exports = {
   output: {
     path: path.join(__dirname, '/dist'),
     filename: 'src/js/[name].[chunkhash].js'
+  },
+  devServer: {
+    historyApiFallback: true
   },
   module: {
     rules: [
@@ -27,11 +31,13 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
       },
       {
-        test: /\.(woff(2)?|ttf|eot|svg)$/,
+        test: /\.(woff(2)?|ttf|eot)$/,
         use: {
           loader: 'file-loader',
           options: {
-            name: 'assets/fonts/[name].[hash].[ext]'
+            name: '[name].[hash].[ext]',
+            outputPath: 'assets/fonts/',
+            publicPath: 'assets/fonts/'
           }
         }
       },
@@ -40,7 +46,9 @@ module.exports = {
         use: {
           loader: 'file-loader',
           options: {
-            name: 'assets/docs/[name].[hash].[ext]'
+            name: '[name].[hash].[ext]',
+            outputPath: 'assets/docs/',
+            publicPath: 'assets/docs/'
           }
         }
       },
@@ -49,7 +57,9 @@ module.exports = {
         use: {
           loader: 'file-loader',
           options: {
-            name: 'assets/audio/[name].[hash].[ext]'
+            name: '[name].[hash].[ext]',
+            outputPath: 'assets/audio/',
+            publicPath: 'assets/audio/'
           }
         }
       },
@@ -60,7 +70,9 @@ module.exports = {
             loader: 'url-loader',
             options: {
               limit: 40000,
-              name: 'assets/images/[name].[hash].[ext]'
+              name: '[name].[hash].[ext]',
+              outputPath: 'assets/images/',
+              publicPath: 'assets/images/'
             }
           },
           'image-webpack-loader'
@@ -71,13 +83,16 @@ module.exports = {
         use: {
           loader: 'file-loader',
           options: {
-            name: 'assets/videos/[name].[hash].[ext]'
+            name: '[name].[hash].[ext]',
+            outputPath: 'assets/videos/',
+            publicPath: 'assets/videos/'
           }
         }
       }
     ]
   },
   plugins: [
+    new FaviconsWebpackPlugin('./assets/images/favicon.png'),
     new CleanWebpackPlugin('dist', {}),
     new HtmlWebpackPlugin({
       inject: false,

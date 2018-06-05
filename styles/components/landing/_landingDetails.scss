@@ -1,9 +1,17 @@
+@import 'bgVideo';
+
 .landingDetails {
+  background-image: linear-gradient(rgba($lightBlue, 0.5), rgba($mediumBlue, 0.5));
+  height: 85vh;
+  clip-path: polygon(50% 100%, 100% 80%, 100% 0, 0 0, 0 80%);
   margin: 0 auto;
-  width: 80%;
   text-align: center;
   color: white;
   font-size: 2rem;
+
+  @include respond(phone) {
+    clip-path: polygon(50% 100%, 100% 95%, 100% 0, 0 0, 0 95%);
+  }
 
   &__img {
     border-radius: 50%;
@@ -11,10 +19,18 @@
     border: solid 0.2rem $veryDarkBlue;
     margin-top: 1.5rem;
     box-shadow: 0 1rem 2rem rgba($black, 0.8);
+
+    @include respond(phone-land) {
+      width: 8rem;
+    }
   }
 
   &__primaryHeader {
     @include respond(phone) {
+      font-size: 3rem;
+    }
+
+    @include respond(phone-land) {
       font-size: 3rem;
     }
   }
@@ -31,6 +47,14 @@
     @include respond(phone) {
       margin-top: 5rem;
       font-size: 2.5rem;
+    }
+
+    @include respond(xs-phone) {
+      margin-top: 2rem;
+    }
+
+    @include respond(phone-land) {
+      margin-top: 0.5rem;
     }
   }
 
@@ -71,10 +95,19 @@
       font-size: 2rem;
     }
 
+    @include respond(xs-phone) {
+      margin-top: 2rem;
+    }
+
+    @include respond(phone-land) {
+      margin-top: 0.5rem;
+    }
+
     &:hover {
       background-color: $darkBlue;
       color: $white;
       box-shadow: 0 1rem 2rem rgba($black, 0.8);
+      text-decoration: none;
     }
   }
 }

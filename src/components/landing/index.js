@@ -1,12 +1,14 @@
 import React from 'react';
-import BGVideo from './bgVideo';
 import LandingDetails from './landingDetails';
+import Skills from './skills';
+import Questions from './questions';
 
 const Landing = () => {
   return (
     <section className="landing">
-      <BGVideo />
       <LandingDetails />
+      <Skills />
+      <Questions />
     </section>
   );
 };

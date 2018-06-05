@@ -1,6 +1,6 @@
 import React from 'react';
-import typingVideo from '../../../../assets/videos/typing.mp4';
-import typingVideo2 from '../../../../assets/videos/typing.webm';
+import typingVideo from '../../../assets/videos/typing.mp4';
+import typingVideo2 from '../../../assets/videos/typing.webm';
 
 const BGVideo = () => {
   return (

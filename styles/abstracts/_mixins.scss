@@ -24,6 +24,16 @@ $breakpoint argument choices
 
 //desiredPixels/currentFont-Size(px) = desired-em
 @mixin respond($breakpoint) {
+  @if $breakpoint == phone-land {
+    @media only screen and (orientation: landscape) and (max-height: 37.5em) {
+      @content;
+    } //600px
+  }
+  @if $breakpoint == xs-phone {
+    @media only screen and (max-width: 25em) {
+      @content;
+    } //400px
+  }
   @if $breakpoint == phone {
     @media only screen and (max-width: 37.5em) {
       @content;
