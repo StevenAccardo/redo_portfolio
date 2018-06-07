@@ -23,6 +23,12 @@
     padding: 0 5rem;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     grid-gap: 5rem;
+
+    @include respond(phone) {
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      padding: 0 1rem;
+      grid-row-gap: 1rem;
+    }
   }
 
   &__header {
@@ -67,6 +73,10 @@
 
     @include respond(tab-port) {
       margin-bottom: 3rem;
+    }
+
+    @include respond(phone) {
+      height: 68rem;
     }
   }
 
