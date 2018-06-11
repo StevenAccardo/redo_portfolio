@@ -84,11 +84,11 @@
     background-size: cover;
     height: 15rem;
 
-    @include respond(tab-port) {
+    @include respond(phone) {
       height: 25rem;
     }
 
-    @include respond(phone) {
+    @include respond(xs-phone) {
       height: 15rem;
     }
 

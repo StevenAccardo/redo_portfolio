@@ -37,6 +37,45 @@ const Skills = () => {
                 </li>
               </ul>
             </ul>
+            <li className="skills__header">Soft Skills</li>
+            <ul className="skills__subHeader">
+              <li className="skills__item">
+                <span className="skills__arrow">&rarr; </span>Professional Mindset
+              </li>
+              <ul>
+                <li className="skills__subItem">
+                  <span className="skills__arrow">&rarr; </span>Results focused mindset, whether providing a product or service. Results turn revenue
+                </li>
+                <li className="skills__subItem">
+                  <span className="skills__arrow">&rarr; </span>Team orientated because we can achieve more together, but definitely capable of working alone on tasks
+                </li>
+              </ul>
+              <li className="skills__item">
+                <span className="skills__arrow">&rarr; </span>Driven and Goal Orientated
+              </li>
+              <ul>
+                <li className="skills__subItem">
+                  <span className="skills__arrow">&rarr; </span>Constantly learning and looking to challenge myself
+                </li>
+                <li className="skills__subItem">
+                  <span className="skills__arrow">&rarr; </span>Open minded with an understanding that there will always be something to learn from others
+                </li>
+              </ul>
+              <li className="skills__item">
+                <span className="skills__arrow">&rarr; </span>Friendly and Empathetic
+              </li>
+              <ul>
+                <li className="skills__subItem">
+                  <span className="skills__arrow">&rarr; </span>Very Approachable
+                </li>
+                <li className="skills__subItem">
+                  <span className="skills__arrow">&rarr; </span>Happy to help out others
+                </li>
+                <li className="skills__subItem">
+                  <span className="skills__arrow">&rarr; </span>Capable of working with various perosnality types
+                </li>
+              </ul>
+            </ul>
             <li className="skills__header">Back-End Development</li>
             <ul className="skills__subHeader">
               <li className="skills__item">

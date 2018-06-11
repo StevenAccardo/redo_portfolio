@@ -13,6 +13,11 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     grid-gap: 5rem;
+
+    @include respond(phone) {
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      grid-row-gap: 1rem;
+    }
   }
 
   &__link,
@@ -34,6 +39,10 @@
     height: 45rem;
     text-align: left;
     transition: all 0.5s;
+
+    @include respond(phone) {
+      height: 50rem;
+    }
 
     &:hover {
       animation: wobble-skew 1s ease-in-out;

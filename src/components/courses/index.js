@@ -5,6 +5,26 @@ const Courses = () => {
     <div className="courses">
       <h5 className="courses__header">A list of courses I have completed!</h5>
       <div className="courses__list">
+        <a className="courses__link" target="_blank" href="https://www.udemy.com/server-side-rendering-with-react-and-redux/learn/v4/overview">
+          <div className="courses__card">
+            <div className="course__body">
+              <h5 className="courses__bodyTitle">Server Side Rendering with React and Redux</h5>
+              <ul className="courses__subList">
+                <li>Architectural considerations of building a server side rendered app</li>
+                <li>Webpack-powered front and and backend app together</li>
+                <li>Use React Router on both client and server side</li>
+                <li>Implement Redux on both client and server side</li>
+                <li>Communicate data from server to client using Redux initial state to the React application</li>
+                <li>Secure application from common XSS attacks caused by state rehydration</li>
+                <li>Handle errors and redirects properly that occur during the server rendering process</li>
+                <li>Authenticate your users with cookie-based authentication during the server rendering phase</li>
+                <li>Proxy setup for authenticated requests to external API</li>
+                <li>Work with React-Helmet for SEO setup</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
         <a className="courses__link" target="_blank" href="https://www.udemy.com/node-with-react-fullstack-web-development/learn/v4/overview">
           <div className="courses__card">
             <div className="course__body">
