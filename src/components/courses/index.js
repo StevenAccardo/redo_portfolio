@@ -5,6 +5,21 @@ const Courses = () => {
     <div className="courses">
       <h5 className="courses__header">A list of courses I have completed!</h5>
       <div className="courses__list">
+        <a className="courses__link" target="_blank" href="https://www.udemy.com/react-testing-with-jest-and-enzyme/learn/v4/overview">
+          <div className="courses__card">
+            <div className="course__body">
+              <h5 className="courses__bodyTitle">React Testing with Jest and Enzyme</h5>
+              <ul className="courses__subList">
+                <li>Connected and unconnected components</li>
+                <li>Component state and Redux state</li>
+                <li>Action creators and reducers</li>
+                <li>Complex action creators that use Redux Thunk and Axios</li>
+                <li>Action creators called from connected components</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
         <a className="courses__link" target="_blank" href="https://www.udemy.com/server-side-rendering-with-react-and-redux/learn/v4/overview">
           <div className="courses__card">
             <div className="course__body">

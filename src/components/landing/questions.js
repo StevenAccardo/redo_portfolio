@@ -81,11 +81,11 @@ class Questions extends Component {
                 So, naturally, that is where I headed. I enjoy the problem solving, and the incremental triumphs that come along with coding.
               </div>
               <div className={`answers__item ${this.state.a2}`}>
-                A: I loved working as a developer! The short answer is that I got greedy and restless. I was working as a JavaScript/UI Developer, but during that time I had broke up with my
-                girlfriend of 3 years. At the same time a friend of mine was working as a sales manager in the mortgage industry, and was making a lot of money doing it. He was a former engineer as
-                well. So I thought to myself, “Hey! I'm good with people, I can do that too!” So I gave a 30-day notice to my company, sold all of my belongings, and moved up to Orange County. It
-                turned out that working in the mortgage industry didn't fit me for a few reasons. I’m glad that I had the chance to try another field, so I could realize how much I loved working as a
-                developer. So here I am, back to what I enjoy doing!
+                A: I loved working as a developer! The short answer is that I got restless. I was working as a JavaScript/UI Developer, but during that time I had broke up with my girlfriend of 3
+                years. At the same time a friend of mine was working as a sales manager in the mortgage industry, and was making a lot of money doing it. He was a former engineer as well. So I thought
+                to myself, “Hey! I'm good with people, I can do that too!” So I gave a 30-day notice to my company, sold all of my belongings, and moved up to Orange County. It turned out that working
+                in the mortgage industry didn't fit me for a few reasons. I’m glad that I had the chance to try another field, so I could realize how much I loved working as a developer. So here I am,
+                back to what I enjoy doing!
               </div>
               <div className={`answers__item ${this.state.a3}`}>
                 A: I knew that I was going to be getting back into development, and I had made enough income in the mortgage industry to hold me over. I'm the type of person where if I've made up my
