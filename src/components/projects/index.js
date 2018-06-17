@@ -9,6 +9,38 @@ const Projects = () => {
         <img src={gitImg} alt="GitHub Link" className="projects__gitImg" />
       </a>
       <div className="projects__project-list">
+        <a className="projects__link" target="_blank" href="https://salty-temple-54689.herokuapp.com/">
+          <div className="projects__box">
+            <div className="projects__img projects__img--weatherApp" />
+            <div className="projects__text">
+              <h1 className="projects__title">The Weather App</h1>
+              <p className="projects__techStack">
+                <strong>Core Tech Stack: </strong>React, Redux, Redux-Thunk, Node, Express, Axios, Jest, Enzyme, Sass, and Webpack
+              </p>
+              <h5 className="projects__codeFeatures">Code Features:</h5>
+              <ul className="projects__featuresList">
+                <li>HTML5 Geolocation</li>
+                <li>Mobile Responsive</li>
+                <li>Protect API key by making requests to server as a proxy</li>
+                <li>Node and Express Server for Serving Static Files and making Requests to the API</li>
+                <li>Dynamic rending of grid system</li>
+                <li>data manipulation of API response</li>
+                <li>Unit Testing with Jest and Enzyme</li>
+                <li>Prop Type Checking</li>
+                <li>Uses SVGs</li>
+              </ul>
+              <h5 className="projects__appFeatures">App Features:</h5>
+              <ul className="projects__featuresList">
+                <li>App automatically fetches weather data if HTML5 Geoloation is allowed</li>
+                <li>Retrieves current weather</li>
+                <li>Retrieves 4 day forecast</li>
+                <li>Renders data in both imperial and metric units</li>
+                <li>Renders a different background image depending on the time of day</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
         <a className="projects__link" target="_blank" href="http://www.majestic-nest.surge.sh/">
           <div className="projects__box">
             <div className="projects__img projects__img--nexter" />
@@ -30,6 +62,7 @@ const Projects = () => {
             </div>
           </div>
         </a>
+
         <a className="projects__link" target="_blank" href="http://www.reflective-name.surge.sh/">
           <div className="projects__box">
             <div className="projects__img projects__img--bookall" />

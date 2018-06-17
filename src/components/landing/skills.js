@@ -101,14 +101,14 @@ const Skills = () => {
                   <span className="skills__arrow">&rarr; </span>Very Approachable
                 </li>
                 <li className="skills__subItem">
-                  <span className="skills__arrow">&rarr; </span>Happy to help out others
+                  <span className="skills__arrow">&rarr; </span>Happy to help others
                 </li>
                 <li className="skills__subItem">
                   <span className="skills__arrow">&rarr; </span>Capable of working with various personality types
                 </li>
               </ul>
             </ul>
-            
+
             <li className="skills__header">Back-End Development</li>
             <ul className="skills__subHeader">
               <li className="skills__item">
