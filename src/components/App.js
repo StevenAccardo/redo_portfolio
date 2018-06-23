@@ -5,6 +5,7 @@ import Landing from './landing';
 import Projects from './projects';
 import Courses from './courses';
 import Footer from './footer';
+import Meetups from './meetups';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Route exact path="/" component={Landing} />
       <Route exact path="/projects" component={Projects} />
       <Route exact path="/courses" component={Courses} />
+      <Route exact path="/meetups" component={Meetups} />
       <Footer />
     </div>
   );
