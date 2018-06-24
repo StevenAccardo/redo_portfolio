@@ -13,16 +13,16 @@ const app = express();
 mongoose.connect(MONGO_URI);
 
 //strictly for adding test cases into the db
-create({
-  eventID: '250852674',
-  eventName: 'OC version: Learn Modern Frontend Web-Development with Vue.js w/Kobi Levy',
-  eventTime: 1529461800000,
-  eventDescription:
-    '<p>Find more details about this event and register for this unusual meetup on Eventbrite: <a href="https://www.eventbrite.com/e/oc-version-learn-modern-frontend-web-development-with-vuejs-wkobi-levy-tickets-46165185312" class="linkified">https://www.eventbrite.com/e/oc-version-learn-modern-frontend-web-development-with-vuejs-wkobi-levy-tickets-46165185312</a><br/>Registering Via Eventbrite ensures that you are included in the headcount and gets you a raffle ticket.</p> <p>Vue.js makes frontend Web-Development fun!</p> <p>For anyone interested in *any* frontend web development</p> <p>- if you are *interested* of React or Angular, then Vue.js might be a better place to start<br/>- all of the concepts taught in much friendlier code<br/>- once you understand how everything flows together, then it will be trivial to switch<br/>(don\'t learn concepts where the syntax is difficult to understand, learn Vue.js first)</p> <p>About the presenter:</p> <p>Kobi Levy have always wanted to be a software developer, both to accomplish a personal goal -- to be able to build things -- and as a professional goal, to use as a skill in the business world. A few years ago, he started learning on his own. In time he met others who were interested in learning to code, and they continued to pursue our shared passion for building awesome stuff on the web.</p> <p>Today, he\'s a full-stack web developer. -- and he\'s pretty damn awesome!</p>',
-  eventUrl: 'https://www.meetup.com/javascript-southbay/events/250852674/',
-  photoUrl: 'https://secure.meetupstatic.com/photos/event/5/f/c/1/highres_471744513.jpeg',
-  groupName: 'JavaScript South Bay & OC  | A Chapter of JavaScriptLA'
-});
+// create({
+//   eventID: '250852674',
+//   eventName: 'OC version: Learn Modern Frontend Web-Development with Vue.js w/Kobi Levy',
+//   eventTime: 1529461800000,
+//   eventDescription:
+//     'test',
+//   eventUrl: 'https://www.meetup.com/javascript-southbay/events/250852674/',
+//   photoUrl: 'https://secure.meetupstatic.com/photos/event/5/f/c/1/highres_471744513.jpeg',
+//   groupName: 'JavaScript South Bay & OC  | A Chapter of JavaScriptLA'
+// });
 
 //Middleware
 app.use(bodyParser.json({ type: '*/*' }));
