@@ -1,0 +1,86 @@
+.meetups {
+  min-height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  @include respond(tab-port) {
+    width: 95%;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+
+  &__subTitle {
+    text-align: center;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+  }
+
+  &__eventsContainer {
+    margin: 0 auto;
+  }
+}
+
+.event {
+  background-color: $lightBlue;
+  border-radius: 0.5rem;
+  padding: 3rem;
+  box-shadow: 0 0.5rem 1rem rgba($black, 0.5);
+  margin-bottom: 2rem;
+
+  &:hover {
+    animation: neon 1.5s ease-in-out infinite alternate;
+  }
+
+  &__infoContainer {
+    display: flex;
+  }
+
+  &__img {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 0.5rem;
+    margin-right: 3rem;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &__meta {
+    flex: 1;
+    position: relative;
+  }
+
+  &__name {
+    @include respond(xs-phone) {
+      margin-top: 4rem;
+    }
+  }
+
+  &__desc {
+    font-size: 1.5rem;
+  }
+
+  &__time {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5rem;
+  }
+
+  &__link,
+  &__link:link,
+  &__link:visited {
+    color: white;
+    transition: all 1.5s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    text-decoration: none;
+  }
+}

@@ -8,9 +8,9 @@ const intervalFetch = async () => {
   try {
     const res = await axios.get(`https://api.meetup.com/dashboard?only=last_event&key=${MEETUP_API_KEY}`);
     //Pull off data from response
-
     ({ id, name, time, description, event_url, photo_url } = res.data.last_event);
-    const groupName = res.data.last_event.group.name;
+    groupName = res.data.last_event.group.name;
+    console.log('groupName', groupName);
   } catch (e) {
     console.log('Could not fetch Meetup data from API.', e);
   }
@@ -18,7 +18,8 @@ const intervalFetch = async () => {
   try {
     //check DB by eventID to make sure the event isn't already stored
     const foundEvent = await Meetup.findOne({ eventID: id });
-    if (!foundEvent) {
+    if (!foundEvent && id) {
+      console.log('entered');
       const meetup = new Meetup({
         eventID: id,
         eventName: name,
@@ -29,6 +30,7 @@ const intervalFetch = async () => {
         groupName
       });
       await meetup.save();
+      console.log('saved', meetup);
     }
   } catch (e) {
     console.log('Could not save the event to the DB', e);

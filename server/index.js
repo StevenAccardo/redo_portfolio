@@ -12,21 +12,22 @@ const app = express();
 
 mongoose.connect(MONGO_URI);
 
+//strictly for adding test cases into the db
 // create({
-//   eventID: '789',
-//   eventName: 'test3',
-//   eventTime: 1529744352,
-//   eventDescription: 'testing3',
+//   eventID: '250442001',
+//   eventName: 'Netoworking class',
+//   eventTime: 152900000000,
+//   eventDescription: 'test',
 //   eventUrl: 'http://www.test.com',
 //   photoUrl: 'http://www.test.com',
-//   groupName: 'testGroup'
+//   groupName: 'IT User Group'
 // });
 
 //Middleware
 app.use(bodyParser.json({ type: '*/*' }));
 
 //Calls the imported intervalFetch callback every 24 hours;
-setInterval(intervalFetch, 30000);
+setInterval(intervalFetch, 18000);
 
 //router
 meetupRouter(app);

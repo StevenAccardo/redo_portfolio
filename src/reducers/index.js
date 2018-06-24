@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import meetup from './meetup';
+import meetups from './meetups';
 
 const rootReducer = combineReducers({
-  meetup
+  meetups
 });
 
 export default rootReducer;

@@ -1,3 +1,5 @@
+//strictly for adding test case into the bd
+
 const mongoose = require('mongoose');
 const Meetup = require('../models/Meetup');
 

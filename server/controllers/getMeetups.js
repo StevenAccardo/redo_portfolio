@@ -5,7 +5,6 @@ module.exports = async (req, res, next) => {
   //Find all meetups in model, and sort them in decending order by date of meetup.
   try {
     const meetupArr = await Meetup.find().sort({ eventTime: -1 });
-    console.log(meetupArr);
     //Send back array of objects
     res.send(meetupArr);
   } catch (e) {
