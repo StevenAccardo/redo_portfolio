@@ -14,14 +14,14 @@ mongoose.connect(MONGO_URI);
 
 //strictly for adding test cases into the db
 create({
-  eventID: 'hfzzqpyxjbkc',
-  eventName: 'Data Science Meetup',
-  eventTime: 1529542800000,
+  eventID: '250852674',
+  eventName: 'OC version: Learn Modern Frontend Web-Development with Vue.js w/Kobi Levy',
+  eventTime: 1529461800000,
   eventDescription:
-    '<p>“ TheDevMasters and Crescent Solutions would like to invite you to join us for a night of Pizza, Networking, and a hands-on Machine Learning workshop! Bring your appetite and laptop, and enjoy an informative and interactive discussion with fellow data science enthusiasts. “<br/><br/>6:00 – Pizza and Mingling<br/><br/>6:30 - TheDevMasters presentation- The Importance of Data Science<br/><br/>theDevMasters, a GBCS LLC company, focusing on educational services to companies and individuals using our applied labs methodology. Whether you are looking for educational enhancement, a salary boost, or a career change, we can help you achieve your goal in the shortest amount of time.<br/><br/>6:45 - Hands-on machine learning session<br/><br/>This is a free workshop for anyone interested in learning about data science using Python. We will be coding as a group with examples and exercises led by the instructor. You’ll learn the basics of data science using Python programming and you’ll leave the workshop with the knowledge and skills to learn more advanced topics and specific toolkits.<br/><br/>Please bring your laptop to code along. No prior programming experience necessary! We recommend creating an account on cocalc.com to code along in Jupyter notebook.<br/><br/>We like to keep these sessions small to make sure everyone is able to ask questions and get help, so please RSVP on meetup to reserve your spot.</p>',
-  eventUrl: 'https://www.meetup.com/OC-Tech-Society/events/251085616/',
-  photoUrl: 'https://secure.meetupstatic.com/photos/event/b/3/a/f/highres_471825999.jpeg',
-  groupName: 'From Crescent Solutions- Tech Meetup'
+    '<p>Find more details about this event and register for this unusual meetup on Eventbrite: <a href="https://www.eventbrite.com/e/oc-version-learn-modern-frontend-web-development-with-vuejs-wkobi-levy-tickets-46165185312" class="linkified">https://www.eventbrite.com/e/oc-version-learn-modern-frontend-web-development-with-vuejs-wkobi-levy-tickets-46165185312</a><br/>Registering Via Eventbrite ensures that you are included in the headcount and gets you a raffle ticket.</p> <p>Vue.js makes frontend Web-Development fun!</p> <p>For anyone interested in *any* frontend web development</p> <p>- if you are *interested* of React or Angular, then Vue.js might be a better place to start<br/>- all of the concepts taught in much friendlier code<br/>- once you understand how everything flows together, then it will be trivial to switch<br/>(don\'t learn concepts where the syntax is difficult to understand, learn Vue.js first)</p> <p>About the presenter:</p> <p>Kobi Levy have always wanted to be a software developer, both to accomplish a personal goal -- to be able to build things -- and as a professional goal, to use as a skill in the business world. A few years ago, he started learning on his own. In time he met others who were interested in learning to code, and they continued to pursue our shared passion for building awesome stuff on the web.</p> <p>Today, he\'s a full-stack web developer. -- and he\'s pretty damn awesome!</p>',
+  eventUrl: 'https://www.meetup.com/javascript-southbay/events/250852674/',
+  photoUrl: 'https://secure.meetupstatic.com/photos/event/5/f/c/1/highres_471744513.jpeg',
+  groupName: 'JavaScript South Bay & OC  | A Chapter of JavaScriptLA'
 });
 
 //Middleware
