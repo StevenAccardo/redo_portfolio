@@ -1,5 +1,4 @@
 import React from 'react';
-import BGVideo from './bgVideo';
 import avatar from '../../../assets/images/accardo1.png';
 import resume from '../../../assets/docs/Steven_Accardo_Resume.pdf';
 
