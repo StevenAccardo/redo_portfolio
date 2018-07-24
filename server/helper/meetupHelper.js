@@ -26,7 +26,7 @@ const intervalFetch = async () => {
         eventTime: time,
         eventDescription: description,
         eventUrl: event_url,
-        photoUrl: photo_url,
+        photoUrl: photo_url || 'https://placeimg.com/150/150/animals',
         groupName
       });
       await meetup.save();
