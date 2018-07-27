@@ -9,6 +9,35 @@ const Projects = () => {
         <img src={gitImg} alt="GitHub Link" className="projects__gitImg" />
       </a>
       <div className="projects__project-list">
+        <a className="projects__link" target="_blank" href="https://stark-gorge-75040.herokuapp.com/">
+          <div className="projects__box">
+            <div className="projects__img projects__img--chatterBox" />
+            <div className="projects__text">
+              <h1 className="projects__title">Chatter.Box</h1>
+              <p className="projects__techStack">
+                <strong>Core Tech Stack: </strong>Node, Express, Socket.io, jQuery, Mustache, Moment, Mocha, Expect
+              </p>
+              <h5 className="projects__codeFeatures">Code Features:</h5>
+              <ul className="projects__featuresList">
+                <li>WebSocket Connections</li>
+                <li>HTML5 Geolocation</li>
+                <li>Mobile Responsive</li>
+                <li>Node and Express Server</li>
+                <li>Real-time data transfer</li>
+              </ul>
+              <h5 className="projects__appFeatures">App Features:</h5>
+              <ul className="projects__featuresList">
+                <li>Allows the user to enter private chat rooms</li>
+                <li>Only users in the same chat cna see each other's messages</li>
+                <li>Messages are received in real-time</li>
+                <li>A real-time user list is shown for each chat room</li>
+                <li>Users receive automatic updates when a user joins or leaves the chat room</li>
+                <li>Users can share their location with other users in the chat room via a Google Map link</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
         <a className="projects__link" target="_blank" href="https://salty-temple-54689.herokuapp.com/">
           <div className="projects__box">
             <div className="projects__img projects__img--weatherApp" />
