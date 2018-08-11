@@ -56,6 +56,35 @@ const Skills = () => {
               </li>
             </ul>
 
+            <li className="skills__header">Back-End Development</li>
+            <ul className="skills__subHeader">
+              <li className="skills__item">
+                <span className="skills__arrow">&rarr; </span>Server and RESTful API Creation with Node.js and Express.js
+              </li>
+              <ul>
+                <li className="skills__subItem">
+                  <span className="skills__arrow">&rarr; </span>Create servers and RESTful APIs from scratch, handle routing, implement various authentication flows, and create/work with middlewares
+                </li>
+                <li className="skills__subItem">
+                  <span className="skills__arrow">&rarr; </span>Ability to use HTTP and WebSocket Communication Protocols
+                </li>
+              </ul>
+              <li className="skills__item">
+                <span className="skills__arrow">&rarr; </span>Data Persisting
+              </li>
+              <ul>
+                <li className="skills__subItem">
+                  <span className="skills__arrow">&rarr; </span>MySQL and MongoDB/Mongoose schema creation and querying
+                </li>
+                <li className="skills__subItem">
+                  <span className="skills__arrow">&rarr; </span>Method creation with Mongoose
+                </li>
+                <li className="skills__subItem">
+                  <span className="skills__arrow">&rarr; </span>Memcaching with Redis
+                </li>
+              </ul>
+            </ul>
+
             <li className="skills__header">Environment Setup</li>
             <ul className="skills__subHeader">
               <li className="skills__item">
@@ -105,29 +134,6 @@ const Skills = () => {
                 </li>
                 <li className="skills__subItem">
                   <span className="skills__arrow">&rarr; </span>Capable of working with various personality types
-                </li>
-              </ul>
-            </ul>
-
-            <li className="skills__header">Back-End Development</li>
-            <ul className="skills__subHeader">
-              <li className="skills__item">
-                <span className="skills__arrow">&rarr; </span>Server and API Creation with Node.js and Express.js
-              </li>
-              <ul>
-                <li className="skills__subItem">
-                  <span className="skills__arrow">&rarr; </span>Create servers and APIs from scratch, handle routing, implement various authentication flows, and create/work with middlewares
-                </li>
-              </ul>
-              <li className="skills__item">
-                <span className="skills__arrow">&rarr; </span>Data Persisting
-              </li>
-              <ul>
-                <li className="skills__subItem">
-                  <span className="skills__arrow">&rarr; </span>MySQL and MongoDB/Mongoose schema creation and querying
-                </li>
-                <li className="skills__subItem">
-                  <span className="skills__arrow">&rarr; </span>Method creation with Mongoose
                 </li>
               </ul>
             </ul>
