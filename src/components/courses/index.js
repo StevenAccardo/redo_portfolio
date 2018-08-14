@@ -5,6 +5,55 @@ const Courses = () => {
     <div className="courses">
       <h5 className="courses__header">A list of courses I have completed!</h5>
       <div className="courses__list">
+
+        <a className="courses__link" target="_blank" href="https://www.udemy.com/nodejs-master-class/learn/v4/overview">
+          <div className="courses__card">
+            <div className="course__body">
+              <h5 className="courses__bodyTitle">Node.js: The Complete Guide to Build RESTful APIs (2018)</h5>
+              <ul className="courses__subList">
+                <li>Node module system</li>
+                <li>Node Package Manager (NPM)</li>
+                <li>Asynchronous JavaScript</li>
+                <li>Useful ES6+ features</li>
+                <li>Implementing CRUD operations</li>
+                <li>Storing complex data in MongoDB</li>
+                <li>Data Validation</li>
+                <li>Authentication and authorization</li>
+                <li>Handling and logging errors</li>
+                <li>Unit and integration testing</li>
+                <li>Test-driven development (TDD)</li>
+                <li>Deployment</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
+        <a className="courses__link" target="_blank" href="https://www.udemy.com/the-complete-nodejs-developer-course-2/learn/v4/overview">
+          <div className="courses__card">
+            <div className="course__body">
+              <h5 className="courses__bodyTitle">The Complete Node.js Developer Course (2nd Edition)</h5>
+              <ul className="courses__subList">
+                <li>Node.js</li>
+                <li>Npm</li>
+                <li>Asynchronous programming</li>
+                <li>ES6/ES7</li>
+                <li>MongoDB</li>
+                <li>Express</li>
+                <li>Socket.IO</li>
+                <li>JWT Authentication</li>
+                <li>Mongoose</li>
+                <li>Application deployment with Heroku</li>
+                <li>Version control with Git</li>
+                <li>GitHub</li>
+                <li>REST API Design</li>
+                <li>Code testing</li>
+                <li>Debugging</li>
+                <li>Mocha</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+
         <a className="courses__link" target="_blank" href="https://www.udemy.com/react-testing-with-jest-and-enzyme/learn/v4/overview">
           <div className="courses__card">
             <div className="course__body">
